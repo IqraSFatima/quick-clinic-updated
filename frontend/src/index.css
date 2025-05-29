@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+.active hr{
+    @apply block;
+}
+
+.active li{
+    @apply text-emerald-500
+}
+
+::-webkit-scrollbar {
+    @apply hidden
+}
+
+.grid-cols-auto {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+}
+
+
+@media (max-width: 740px) {
+    .active p{
+        @apply text-white bg-emerald-500 px-4 py-2 rounded inline-block
+    }
+}
